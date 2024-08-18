@@ -19,7 +19,7 @@ netwizard已移除，发现在某种情况下会造成设置错误。请手动�
 
 默认登录密码：password
 
-默认wan➼eth1 默认lan➼eth0 （就是大雕常规默认）
+默认wan→eth1 默认lan→eth0 （就是大雕常规默认）
 
 切换至默认内核版本 6.1
 
