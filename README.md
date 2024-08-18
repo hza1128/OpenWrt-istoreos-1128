@@ -19,9 +19,9 @@ netwizard已移除，发现在某种情况下会造成设置错误。请手动�
 
 默认登录密码：password
 
-默认wan口 eth1 默认lan口 eth0 （就是大雕常规默认）
+默认wan↦eth1 默认lan↦eth0 （就是大雕常规默认）
 
-切换至默认内核版本 6.6
+切换至默认内核版本 6.1
 
 截图展示
 ![image](https://github.com/Eircodong/openwrt-x86/assets/59461660/bc2d284d-e791-46f5-bf73-a738454729a9)
