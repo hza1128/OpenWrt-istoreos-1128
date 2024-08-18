@@ -26,5 +26,4 @@ netwizard已移除，发现在某种情况下会造成设置错误。请手动�
 截图展示
 ![image](https://github.com/Eircodong/openwrt-x86/assets/59461660/bc2d284d-e791-46f5-bf73-a738454729a9)
 ![image](https://github.com/Eircodong/openwrt-x86/assets/59461660/1d5137ad-7137-43f3-a44c-2260117b0dfe)
-![image](https://github.com/Eircodong/openwrt-x86/assets/59461660/6bf269c2-02c3-472b-8772-370d96f8b05f)
-![image](https://github.com/Eircodong/openwrt-x86/assets/59461660/5609c037-c5ec-428d-9b6d-ea26887526bf)
+
