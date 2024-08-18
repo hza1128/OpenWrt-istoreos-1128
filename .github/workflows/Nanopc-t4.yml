@@ -22,7 +22,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: nanopi-pc.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-nanopc-t4.sh
+  DIY_P2_SH: nanopc-t4.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
