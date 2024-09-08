@@ -34,7 +34,7 @@ date_version=$(date +"%y.%m.%d")
 orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
 sed -i "s/${orig_version}/R${date_version} Nanopc-T4 by hza/g" package/lean/default-settings/files/zzz-default-settings
 
-# Add cpu temperature
+# Add cpu temperature fancontrol
 curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol-direct.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
 curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh
 curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol --create-dirs -o target/linux/rockchip/armv8/base-files/etc/init.d/fa-fancontrol
