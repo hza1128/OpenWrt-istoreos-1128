@@ -32,7 +32,7 @@ sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/fil
 # 修改版本为编译日期
 date_version=$(date +"%y.%m.%d")
 orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
-sed -i "s/${orig_version}/R${date_version} Nanopc-T4 by hza/g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/${orig_version}/R${date_version}  by hza1128/g" package/lean/default-settings/files/zzz-default-settings
 
 # Add cpu temperature fancontrol
 curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol-direct.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
