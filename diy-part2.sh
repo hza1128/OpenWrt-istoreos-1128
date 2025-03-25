@@ -11,7 +11,7 @@
 #
 
 # 设置默认ip
-sed -i 's/192.168.1.1/192.168.10.12/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.11/g' package/base-files/files/bin/config_generate
 
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/Makefile
