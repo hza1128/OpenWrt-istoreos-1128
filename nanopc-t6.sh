@@ -21,6 +21,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/
 
 # 修改主题背景
 cp -f $GITHUB_WORKSPACE/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+cp -f $GITHUB_WORKSPACE/Makefile feeds/small/v2ray-plugin/Makefile
 
 # Modify hostname
 # sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
