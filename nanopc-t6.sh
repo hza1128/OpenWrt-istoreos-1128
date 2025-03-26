@@ -19,6 +19,9 @@ sed -i 's/192.168.1.1/192.168.10.11/g' package/base-files/files/bin/config_gener
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/Makefile
 
+# 修改主题背景
+cp -f $GITHUB_WORKSPACE/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+
 # Modify hostname
 # sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
@@ -35,10 +38,10 @@ orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | 
 sed -i "s/${orig_version}/R${date_version}  by hza1128/g" package/lean/default-settings/files/zzz-default-settings
 
 # Add cpu temperature fancontrol
-curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol-direct.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
-curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh
-curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol --create-dirs -o target/linux/rockchip/armv8/base-files/etc/init.d/fa-fancontrol
-chmod +x target/linux/rockchip/armv8/base-files/etc/init.d/fa-fancontrol target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol*.sh
+#curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol-direct.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol-direct.sh
+#curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol.sh --create-dirs -o target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol.sh
+#curl -sfL https://raw.githubusercontent.com/hza1128/R4S_Fans/main/fa-fancontrol --create-dirs -o target/linux/rockchip/armv8/base-files/etc/init.d/fa-fancontrol
+#chmod +x target/linux/rockchip/armv8/base-files/etc/init.d/fa-fancontrol target/linux/rockchip/armv8/base-files/usr/bin/fa-fancontrol*.sh
 
 # 修复rk35xx报错
 sed -i '/^UBOOT_TARGETS := rk3528-evb rk3588-evb/s/^/#/' package/boot/uboot-rk35xx/Makefile
