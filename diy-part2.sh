@@ -16,6 +16,9 @@ sed -i 's/192.168.1.1/192.168.10.11/g' package/base-files/files/bin/config_gener
 # 设置默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/Makefile
 
+# 修改主题背景
+cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+
 # Modify hostname
 # sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
