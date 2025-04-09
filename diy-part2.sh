@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.10.11/g' package/base-files/files/bin/config_gener
 sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/Makefile
 
 # 修改主题背景
-cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argone/htdocs/luci-static/argone/img/bg1.jpg
+cp -f $GITHUB_WORKSPACE/images/bg1.jpg feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 
 # Modify hostname
@@ -44,4 +44,4 @@ sed -i "s/${orig_version}/R${date_version} by hza800755/g" package/lean/default-
 rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
 rm -rf feeds/smpackage/adguardhome
 rm -rf feeds/smpackage/luci-app-adguardhome
-rm -rf feeds/luci/themes/luci-theme-argon
+
